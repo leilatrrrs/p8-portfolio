@@ -1,0 +1,25 @@
+.about {
+    background: black;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    margin-inline: 85px ;
+    margin-bottom: 50px;
+    padding: 30px;
+    text-align: center;
+    & h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 70px;
+        font-weight: 700;
+        text-decoration: underline #ccaafc;
+    }
+    & p {
+        font-size: 28px;
+    }
+}
+.about-container {
+    margin-bottom: 37%;
+}

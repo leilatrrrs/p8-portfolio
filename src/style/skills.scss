@@ -1,0 +1,18 @@
+.skills {
+    background-color:black;
+    height: auto;
+    align-items: center;
+    margin-inline: 25px;
+    padding: 30px;
+    & h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 70px;
+        font-weight: 700;
+        text-decoration: underline #ccaafc;
+    }
+    & p {
+        text-align: center;
+    }
+}

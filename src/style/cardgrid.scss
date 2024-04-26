@@ -1,0 +1,53 @@
+.skills-container {
+  margin-inline: 85px;
+}
+
+.skills-title {
+  position: relative; /* Assure que la ligne horizontale est positionnée relativement à ce conteneur */
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.title-line {
+  position: absolute; /* Permet de positionner la ligne horizontale absolument à l'intérieur du conteneur */
+  width: 3%; /* Définit la largeur de la ligne horizontale à la moitié de la largeur du conteneur */
+  bottom: -5px; /* Ajuste la position verticale de la ligne horizontale pour qu'elle apparaisse juste en dessous du texte */
+  border: none;
+  border-bottom: 3px solid #ccaacf; /* Couleur et épaisseur du trait */
+}
+
+.skills-card {
+  background-color: #262626;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-inline: 10px;
+  padding: 34px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Bungee';
+  letter-spacing: 1px;
+}
+
+.skills-card img {
+  background-color: #262626;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  margin-bottom: 50px;
+}
+.skills-card {
+  margin-top: 5px;
+  transition: transform 0.3s ease; /* Ajoute une transition à toutes les cartes */
+}
+
+.skills-card:hover {
+  transform: translateY(-5px); /* Soulève uniquement la carte survolée */
+}

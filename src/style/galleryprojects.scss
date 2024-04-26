@@ -1,0 +1,142 @@
+.projects {
+    background-color: black;
+    height: auto;
+    margin-inline: 85px;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+    & h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-decoration: underline #CCAAFC;
+        font-size: 70px;
+        font-weight: 700;
+    }
+/*     & .img-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto ;
+        width:auto;
+        gap: 10px;
+        margin: 10px;
+
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: fill;
+    } */
+}
+.btn-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.button {
+    text-decoration: none;
+    font-size: 25px;
+    color: #CCAAFC;
+    padding: 20px 50px;
+    border: 2px solid #CCAAFC;
+    position: relative;
+    margin-top: 50px;
+}
+
+.button::before, 
+.button::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all .5s;
+}
+.button::before{
+    top: -18px;
+    left: -14px;
+    border-width: 2px 0 0 2px;
+}
+.button::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 2px 2px 0;
+}
+.button:hover::before,
+.button:hover::after{
+    width: calc(99.6% + 27.9px);
+    height: calc(99.7% + 29.2px);
+}
+
+.container-projects{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+
+.container-card {
+    display: flex;
+    background: grey;
+    margin-inline: 10px;
+    border-radius: 50px;
+}
+
+.card-projects{
+    height: 80%;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color:grey;
+    border-radius: 50px;
+}
+
+.card-projects img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: grey;
+}
+
+.intro {
+    opacity: 0;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: black;
+    color: white;
+    transition: opacity 0.5s, ;
+    bottom: 0;
+}
+
+.intro h3 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.intro p {
+    font-size: 10px;
+    margin: 20px;
+}
+
+.card-projects h3 {
+    opacity: 1;
+
+}
+.card-projects:hover{
+    cursor: pointer;
+}
+
+.card-projects:hover .intro{
+    opacity: 1;
+}
+
+.card-projects:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+

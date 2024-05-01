@@ -1,7 +1,7 @@
 .presentation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-inline:85px;
+  margin-inline:159px;
   margin-bottom: 30px;
   padding: 30px;   
   border-left: 8px solid white;
@@ -10,7 +10,6 @@
   & .text {
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
   }
   & h1 {
     font-size: 102px;
@@ -21,43 +20,42 @@
     font-size: 70px;
     font-weight: 600;
     padding: 0 1px;
-    background: linear-gradient(
-      to bottom,
-      transparent 80%,
-      #ccaafc
-    );
+   position: relative;
+   text-decoration: underline;
+   text-decoration-color: #ccaafc; 
+  transition: text-decoration-color 0.3s ease; 
+  &:hover {
+    text-decoration-color: rgba(204, 170, 252, 0.5) 
+  }
   }
   & h3 {
+    font-size: 20px;
     font-weight: 300;
   }
-}
-
-.presentation img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-left: 10px;
-  border:solid 4px #ccaafc;  
-  align-self: flex-end; 
-  margin-bottom:220px;
-}
-
-
-.presentation .image-presentation {
-  display: flex;
-  justify-content: center; /* Pour centrer horizontalement */
-}
-
-.presentation::before {
-  content: "";
-  position: absolute;
-  top: -4px; /* Ajuster la position de la boule */
-  left: -10.7px; /* Ajuster la position de la boule */
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  border-radius: 50%;
-
+  & img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border:solid 4px #ccaafc;  
+    align-self: flex-end; 
+    margin-bottom:220px;
+  }
+  & .image-presentation {
+    display: flex;
+    justify-content: center; 
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px; /* Ajuster position boule */
+    left: -10.7px; /* Ajuster position  boule */
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+  
+  }
 }
 
 @media (max-width:1202px) {
@@ -68,10 +66,32 @@
     text-align: center;
     border-left: none;
   }
+  .presentation h2 {
+    font-size:45px ;
+  }
   .presentation img {
     margin-bottom: 0;
   }
   .presentation:before {
     display: none;
+  }
+}
+
+@media (max-width:693px) {
+  .presentation{
+    margin-inline: auto;
+    white-space: wrap;
+  }
+  .presentation h1 {
+    font-size: 52px;
+  }
+  .presentation h2 {
+    font-size: 30px;
+  }
+  .presentation h3 {
+    font-size: 16px;
+  }
+  .presentation .text{
+    margin-right: 0;
   }
 }

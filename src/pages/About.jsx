@@ -6,9 +6,9 @@ import Footer from '../components/Footer';
 function About() {
     const isHome = false;
     return (
-        <div className='about'>
+        <div className='about-page'>
             <Header/>
-                <main className='about-container'>
+                <main>
                     <BannerAbout isHome={isHome}/>
                 </main> 
             <Footer/>

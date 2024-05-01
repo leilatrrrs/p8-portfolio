@@ -16,3 +16,9 @@
         text-align: center;
     }
 }
+
+@media (max-width:693px){
+    .skills{
+        margin-inline: 0;
+    }
+}

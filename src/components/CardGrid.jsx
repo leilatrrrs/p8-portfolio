@@ -10,27 +10,27 @@ import React from "react";
     
           <div className="card">
             <div className="skills-card">
-              <img src="/images/html.png" alt="" />
+              <img src="/images/html.png" alt="logo html" />
               HTML
             </div>
     
             <div className="skills-card">
-              <img src="/images/css.png" alt="" />
+              <img src="/images/css.png" alt="logo css" />
               CSS
             </div>
     
             <div className="skills-card">
-              <img src="/images/js.png" alt="" />
+              <img src="/images/js.png" alt="logo js" />
               JavaScript
             </div>
     
             <div className="skills-card">
-              <img src="/images/react.png" alt="" />
+              <img src="/images/react.png" alt="logo react" />
               React
             </div>    
     
             <div className="skills-card">
-              <img src="/images/sass.png" alt="" />
+              <img src="/images/sass.png" alt="logo sass" />
               Sass
             </div>
           </div>
@@ -42,11 +42,11 @@ import React from "react";
     
           <div className="card">
             <div className="skills-card">
-              <img src="/images/nodejs.png" alt="" />
+              <img src="/images/nodejs.png" alt="logo nodejs" />
               nodeJs
             </div>
             <div className="skills-card">
-              <img src="/images/express-1.png" alt="" />
+              <img src="/images/express-1.png" alt="logo express" />
               express
             </div>
           </div>
@@ -58,7 +58,7 @@ import React from "react";
     
           <div className="card">
             <div className="skills-card">
-            <img src="/images/mongo.png" alt="" />
+            <img src="/images/mongo.png" alt="logo mongodb" />
                 MongoDb
             </div>
           </div>
@@ -70,10 +70,11 @@ import React from "react";
     
           <div className="card">
             <div className="skills-card">
-              <img src="/images/figma.png" alt="" />
+              <img src="/images/figma.png" alt="logo figma" />
               Figma
             </div>
           </div>
+          
         </div>
       );
     }

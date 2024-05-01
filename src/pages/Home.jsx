@@ -4,10 +4,9 @@ import BannerAbout from '../components/BannerAbout'
 import GalleryProjects from '../components/GalleryProjects';
 import Skills from '../components/Skills';
 import Presentation  from '../components/Presentation';
-import { useEffect } from 'react';
-import { gsap } from "gsap";
 import Footer from '../components/Footer';
 import "../style/index.scss"
+import Contact from '../components/Contact';
 
 
 
@@ -19,8 +18,9 @@ function Home() {
             <main>
                 <Presentation />
                 <BannerAbout isHome={isHome}/>
-                <GalleryProjects/>
-                <Skills/>
+                <GalleryProjects isHome={isHome}/>
+                <Skills />
+                <Contact/>
             </main>
             <Footer/>
         </div>

@@ -3,17 +3,17 @@
 }
 
 .skills-title {
-  position: relative; /* Assure que la ligne horizontale est positionnée relativement à ce conteneur */
+  position: relative; 
   margin-bottom: 20px;
   font-size: 25px;
 }
 
 .title-line {
-  position: absolute; /* Permet de positionner la ligne horizontale absolument à l'intérieur du conteneur */
-  width: 3%; /* Définit la largeur de la ligne horizontale à la moitié de la largeur du conteneur */
-  bottom: -5px; /* Ajuste la position verticale de la ligne horizontale pour qu'elle apparaisse juste en dessous du texte */
+  position: absolute; 
+  width: 3%; 
+  bottom: -5px; 
   border: none;
-  border-bottom: 3px solid #ccaacf; /* Couleur et épaisseur du trait */
+  border-bottom: 3px solid #ccaacf; 
 }
 
 .skills-card {
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5px;
   margin-bottom: 20px;
   margin-inline: 10px;
   padding: 34px;
@@ -29,13 +30,13 @@
   font-weight: 700;
   font-family: 'Bungee';
   letter-spacing: 1px;
-}
-
-.skills-card img {
-  background-color: #262626;
-  width: 45px;
-  height: 45px;
-  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  & img{
+    background-color: #262626;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
 }
 
 .card{
@@ -43,11 +44,32 @@
   grid-template-columns:1fr 1fr 1fr 1fr ;
   margin-bottom: 50px;
 }
-.skills-card {
-  margin-top: 5px;
-  transition: transform 0.3s ease; /* Ajoute une transition à toutes les cartes */
-}
+
 
 .skills-card:hover {
-  transform: translateY(-5px); /* Soulève uniquement la carte survolée */
+  transform: translateY(-5px); 
+}
+
+@media (max-width:1202px) {
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    display: grid;
+    grid-template-columns:1fr 1fr  ;
+  }
+}
+
+@media (max-width:693px){
+  .card{
+    display: grid;
+    grid-template-columns:1fr;
+}
+.projects{
+  margin-inline: auto;
+}
+.skills-container {
+  margin-inline: 0;
+}
 }

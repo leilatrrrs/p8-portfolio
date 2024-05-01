@@ -40,7 +40,7 @@ function GalleryProjects({isHome}) {
                     {!isHome && (
                         <div className="container-card">
                         <div className="card-projects">
-                            <img src="/images/booki.webp" alt="Site Bookie" />
+                            <img src="./images/booki.webp" alt="Site Bookie" />
                                 <div className="intro">
                                     <h3>Booki</h3>
                                     <p> Création de la page d'accueil d'une agence de voyage avec HTML & CSS.</p>
@@ -52,7 +52,7 @@ function GalleryProjects({isHome}) {
                     {!isHome && (
                         <div className="container-card">
                         <div className="card-projects">
-                            <img src="/images/nina.webp" alt="Site Nina Carducci" />
+                            <img src="./images/nina.webp" alt="Site Nina Carducci" />
                                 <div className="intro">
                                     <h3>Nina Carducci</h3>
                                     <p>Réalisation du débuggage et de l'optimisation d'un site de photographe.</p>

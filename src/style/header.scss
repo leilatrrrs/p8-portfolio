@@ -3,7 +3,7 @@
     height: auto;
     width: auto;
     margin-bottom: 100px;
-    margin-inline: 115px;
+    margin-inline: 85px;
     justify-content: space-between;
     color: white;
     background-color:black;
@@ -11,27 +11,32 @@
     font-size: 25px;
     & h1 {
         font-size: 38px;
+
     }
-    & ul {
-        color: white;
-        list-style-type: none;
-        display: flex;
-        gap: 50px;
-        position: relative;
-    }
-    & a {
-        text-decoration: none;
-        color: white;   
-        font-family: 'proza Libre';
-        font-size: 35px;
-    }
-    & ul a:hover{
-        color: #ccafcc;
-    }
-    &  img{
-        width: 100%;
-        height: 100%;
-    }
+    
+}
+
+.header ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;   
+    font-family: 'proza libre';
+    font-size: 30px;
+}
+.header ul a:hover{
+    color: #ccafcc;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
 }
 
 .header ul li a::after {

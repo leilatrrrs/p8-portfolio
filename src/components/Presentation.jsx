@@ -10,7 +10,7 @@ function Presentation() {
             </div>
             
             <div className="image-presentation">
-                <img src="images/photoprofile.webp" alt="photo de profil" />
+                <img src="images/essaip.webp" alt="photo de profil" />
             </div>
             
         </div>

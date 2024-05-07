@@ -6,7 +6,7 @@ function Header () {
     return (
         <div className="header">
             <NavLink to="/">
-              <img src="/images/logolt.png" alt="" />
+              <img src="/images/logolt.PNG" alt="" />
             </NavLink>
 
             <input type='checkbox' id='check' />

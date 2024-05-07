@@ -23,3 +23,9 @@
 .about-container {
     margin-bottom: 37%;
 }
+
+@media (max-width: 693px) {
+    .about p{
+        font-size: 20px;
+    }
+}
